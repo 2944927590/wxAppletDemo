@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <image bindtap="bindViewTap" class="userinfo-avatar logo" src="../../img/logo.png"></image>
+    <view class='load'>
+      <text class='{{current == 0 ? "sct": ""}}'></text>
+      <text class='{{current == 1 ? "sct": ""}}'></text>
+      <text class='{{current == 2 ? "sct": ""}}'></text>
+    </view>
+  </view>
+</view>
