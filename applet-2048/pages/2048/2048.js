@@ -67,7 +67,6 @@ Page({
     
   },
   touchEnd(ev) {
-    console.log(ev);
     const touch = ev.changedTouches[0];
     this.touchEndX = touch.clientX;
     this.touchEndY = touch.clientY;
@@ -76,13 +75,6 @@ Page({
     const absdisX = Math.abs(disX);
     const disY = this.touchStartY - this.touchEndY;
     const absdisY = Math.abs(disY);
-
-    console.log({
-      touchStartX: this.touchStartX,
-      touchStartY: this.touchStartY,
-      touchEndX: this.touchEndX,
-      touchEndY: this.touchEndY,
-    })
 
     if (this.touchEndX === 0 && this.touchEndY === 0) {
       return false;
